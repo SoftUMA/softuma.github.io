@@ -1028,7 +1028,9 @@ body .markdown-body
     page-break-after: avoid;
   }
 }
-</style><title>DGR</title></head>
+</style><title>DGR</title>
+<style>li { font-family: Lato; }</style>
+</head>
 
 <body><article class="markdown-body"><h1 id="dgr-del-sistema-de-movilidad-emasa"><a name="user-content-dgr-del-sistema-de-movilidad-emasa" href="#dgr-del-sistema-de-movilidad-emasa" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>DGR del Sistema de Movilidad, EMASA</h1>
 
@@ -1062,8 +1064,8 @@ body .markdown-body
 </ul>
 </li>
 <li><a onclick="scrollToTarget('#3-requisitos-externos-de-interfaz')">3. Requisitos externos de interfaz</a><ul>
-<li><a onclick="scrollToTarget('#31-interfaces-de-usuario')">3.1. Interfaces de usuario</a></li>
-<li><a onclick="scrollToTarget('#32-interfaces-de-hardware')">3.2. Interfaces de hardware</a></li>
+<li><a onclick="scrollToTarget('#31-interfaces-de-usuario')">3.1. Interfaces de usuario (NYI)</a></li>
+<li><a onclick="scrollToTarget('#32-interfaces-de-hardware')">3.2. Interfaces de hardware (NYI)</a></li>
 <li><a onclick="scrollToTarget('#33-interfaces-de-software')">3.3. Interfaces de software</a></li>
 <li><a onclick="scrollToTarget('#34-interfaces-de-comunicacion')">3.4. Interfaces de comunicación</a></li>
 </ul>
@@ -1088,13 +1090,57 @@ body .markdown-body
 <p>Crear una aplicación móvil que permita a los operarios de la <em>Empresa Municipal de Aguas de Málaga S.A.</em> (<strong>EMASA</strong>) acceder y gestionar los avisos y órdenes de trabajos generados en la central.</p>
 <p>Nuestra aplicación cubre el trabajo sobre el terreno de los operarios.</p>
 <h2 id="12-convenciones-del-documento"><a name="user-content-12-convenciones-del-documento" href="#12-convenciones-del-documento" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.2. Convenciones del documento</h2>
+<ul>
+<li>
+<p><strong>EMASA</strong>: Empresa Municipal de Aguas S.A.</p>
+</li>
+<li>
+<p><strong>SAP</strong>: Sistema de Aplicaciones y Productos, el sistema de informatización, ya implementado, que utiliza actualmente EMASA.</p>
+</li>
+<li>
+<p><strong>GIS</strong>: Sistema de Información de Posición, sistema de geolocalización, ya implementado, que utiliza actualmente EMASA.</p>
+</li>
+<li>
+<p><strong>Supervisor</strong>: trabajador de EMASA encargado de asignar los avisos y crear las órdenes de trabajo.</p>
+</li>
+<li>
+<p><strong>Trabajador de Campo</strong>: trabajador de EMASA que realiza un trabajo en el lugar del origen de un aviso.</p>
+</li>
+<li>
+<p><strong>Capataz, Oficial, Ayudante</strong>: rangos de trabajadores de campo, de mayor a menor responsabilidad respectivamente.</p>
+</li>
+<li>
+<p><strong>Brigada</strong>: conjunto de trabajadores de campo.</p>
+</li>
+<li>
+<p><strong>Subcontrata</strong>: cualquier empresa externa a EMASA que realiza labores relativas a la red de saneamiento por orden de la misma EMASA.</p>
+</li>
+<li>
+<p><strong>Órden de Trabajo</strong>: mandato prescrito por un supervisor para que una brigada o una subcontrata solucione el origen de un aviso.</p>
+</li>
+<li>
+<p><strong>Usuario</strong>: trabajadores de EMASA o subcontratas que harán uso de la aplicación.</p>
+</li>
+<li>
+<p><strong>Desarrollador</strong>: miembro del équipo que diseña e implementa el producto de software.</p>
+</li>
+<li>
+<p><strong>UI</strong>: Interfaz de Usuario, la parte de la aplicación software que el usuario ve y con la que interactúa.</p>
+</li>
+<li>
+<p><strong>UX</strong>: Experiencia de Usuario, la experiencia esperada, deseada o real de un usuario con el producto, especialmente relacionado con el diseño de la interfaz de usuario del producto.</p>
+</li>
+</ul>
 <h2 id="13-audiencia-a-la-que-va-destinado-el-documento-y-sugerencias-de-lectura"><a name="user-content-13-audiencia-a-la-que-va-destinado-el-documento-y-sugerencias-de-lectura" href="#13-audiencia-a-la-que-va-destinado-el-documento-y-sugerencias-de-lectura" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.3. Audiencia a la que va destinado el documento y sugerencias de lectura</h2>
-<p>El público al que va dirigido:<br />
-- Usuarios: para que aporten impresiones que ayuden a mejorar el proyecto.<br />
-- Desarrolladores: para guiarlos durante la evolución del producto.<br />
-- Futuros desarrolladores: para dejar constancia de la mecánica de nuestro sistema.</p>
-<!-- TODO completar las sugerencias de lectura -->
-
+<p>El público al que va dirigido:</p>
+<ul>
+<li><p><strong>Usuarios</strong>: para que aporten impresiones que ayuden a mejorar el proyecto.</p></li>
+<li><p><strong>Desarrolladores</strong>: para guiarlos durante la evolución del producto.</p></li>
+<li><p><strong>Futuros desarrolladores</strong>: para dejar constancia de la mecánica de nuestro sistema.</p></li>
+</ul>
+<p>Tanto para los compradores del producto software como para los usuarios de la aplicación se recomienda la lectura de los apartados del 1.5 a 2.4, así como el capítulo 4 en su totalidad.</p>
+<p>Los desarrolladores, por su parte, deberían comenzar leyendo los primeros capítulos, donde se especifican las carcterísticas generales del sistema.<br />
+Para luego continuar con los capítulos 3 y 4, para tener consciencia de todos los detalles y requisitos de los que precisa el proyecto.</p>
 <h2 id="14-ambito-del-producto"><a name="user-content-14-ambito-del-producto" href="#14-ambito-del-producto" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.4. Ámbito del producto</h2>
 <p>El producto es un sistema de avisos en movilidad que funciona tanto en dispositivos móviles, ej. tablets con Android. Este sistema proporciona diversos beneficios entre los que encontramos la facilitación en la gestion de los avisos. Al gestionarlos electrónicamente, reducimos el número de papeles que pueden deteriorarse.</p>
 <p>Proporciona una interfaz de usuario sencilla, intuitiva y adaptable que facilita la gestión de los avisos.</p>
@@ -1106,17 +1152,19 @@ body .markdown-body
 <p>Este proyecto surge por la necesidad de reemplazar el sistema actal de gestión de avios en papel. Actualmente muchos de los avisos que llegan en papel, llegan en mal estado, lo que convierte a nuestro producto en una prioridad para EMASA.</p>
 <p>Nuestro producto se configura como un sistema autónomo que hace uso de diversos servicios del <em>Sistema de Aplicaciones y Productos</em> (<strong>SAP</strong>).</p>
 <h2 id="22-funciones-del-producto"><a name="user-content-22-funciones-del-producto" href="#22-funciones-del-producto" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.2. Funciones del producto</h2>
-<p>El sistema puede:<br />
-- Consultar avisos existentes.<br />
-- Crear avisos nuevos.<br />
-- Modificar datos de aviso.<br />
-- Añadir elementos del <em>Sistema de Información Geográfica</em> (<strong>GIS</strong>).<br />
-    - Necesaria una <em>Experiencia de Usuario</em> (<strong>UX</strong>) sencilla e intuitiva.<br />
-- Reasignar aviso.<br />
-- Cambiar diagnóstico.<br />
-- Generar una <em>Orden de Trabajo</em>.<br />
-- Completar aviso.<br />
-- Asignar adjuntos (imágenes, PDFs, vídeos&hellip;).</p>
+<p>El sistema puede:</p>
+<ul>
+<li><p>Consultar avisos existentes.</p></li>
+<li><p>Crear avisos nuevos.</p></li>
+<li><p>Modificar datos de aviso.</p></li>
+<li><p>Añadir elementos del <em>Sistema de Información Geográfica</em> (<strong>GIS</strong>).</p></li>
+    <ul><li><p>Necesaria una <em>Experiencia de Usuario</em> (<strong>UX</strong>) sencilla e intuitiva.</p></li></ul>
+<li><p>Reasignar aviso.</p></li>
+<li><p>Cambiar diagnóstico.</p></li>
+<li><p>Generar una <em>Orden de Trabajo</em>.</p></li>
+<li><p>Completar aviso.</p></li>
+<li><p>Asignar adjuntos (imágenes, PDFs, vídeos&hellip;).</p></li>
+</ul>
 <h2 id="23-tipos-de-usuario-y-sus-caracteristicas"><a name="user-content-23-tipos-de-usuario-y-sus-caracteristicas" href="#23-tipos-de-usuario-y-sus-caracteristicas" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.3. Tipos de usuario y sus características</h2>
 <p>Según el ámbito diferenciaremos entre el <em>supervisor</em> y el <em>trabajador de campo</em>, desempeñando el supervisor su trabajo en la oficina. A diferencia del trabajador de campo que lo hace en el lugar del incidente.<br />
 Según los privilegios diferenciaremos, en el trabajo de campo, entre <em>capataz</em>, <em>oficial</em> y <em>ayudante</em>, listados de mayor a menor privilegio.</p>
@@ -1137,13 +1185,13 @@ Según los privilegios diferenciaremos, en el trabajo de campo, entre <em>capata
 <p>Suponemos que el hardware usado por las subcontratas de EMASA será compatible con nuestro sistema.</p>
 <h1 id="3-requisitos-externos-de-interfaz"><a name="user-content-3-requisitos-externos-de-interfaz" href="#3-requisitos-externos-de-interfaz" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3. Requisitos externos de interfaz</h1>
 <h2 id="31-interfaces-de-usuario"><a name="user-content-31-interfaces-de-usuario" href="#31-interfaces-de-usuario" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.1. Interfaces de usuario</h2>
-<!-- FIXME -->
+<!-- TODO -->
 <p>
   No existe información para cumplimentar esta sección.
 </p>
 
 <h2 id="32-interfaces-de-hardware"><a name="user-content-32-interfaces-de-hardware" href="#32-interfaces-de-hardware" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.2. Interfaces de hardware</h2>
-<!-- FIXME -->
+<!-- TODO -->
 <p>
   No existe información para cumplimentar esta sección.
 </p>
@@ -1156,178 +1204,178 @@ Según los privilegios diferenciaremos, en el trabajo de campo, entre <em>capata
 <h2 id="41-consultar-avisos-existentes"><a name="user-content-41-consultar-avisos-existentes" href="#41-consultar-avisos-existentes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.1. Consultar avisos existentes</h2>
 <ul>
 <li><strong>Descripción</strong>:<ul>
-<li>El usuario podrá acceder a la información existente sobre un aviso determinado, así como listar los avisos a los que tenga acceso.</li>
+<li><p>El usuario podrá acceder a la información existente sobre un aviso determinado, así como listar los avisos a los que tenga acceso.<p></li>
 </ul>
 </li>
 <li><strong>Prioridad</strong>:<ul>
-<li>Alta.</li>
+<li><p>Alta.</p></li>
 </ul>
 </li>
 <li><strong>Secuencia de acciones</strong>:<ol>
-<li>El usuario se identifica en el sistema.</li>
-<li>Se realiza una búsqueda / filtrado sobre los avisos a los que tiene acceso.</li>
-<li>La aplicación muestra una lista que se adapte a dicha búsqueda.</li>
+<li><p>El usuario se identifica en el sistema.</p></li>
+<li><p>Se realiza una búsqueda / filtrado sobre los avisos a los que tiene acceso.</p></li>
+<li><p>La aplicación muestra una lista que se adapte a dicha búsqueda.</p></li>
 </ol>
 </li>
 </ul>
 <h2 id="42-crear-avisos-nuevos"><a name="user-content-42-crear-avisos-nuevos" href="#42-crear-avisos-nuevos" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.2. Crear avisos nuevos</h2>
 <ul>
 <li><strong>Descripción</strong>:<ul>
-<li>El usuario, teniendo los permisos necesarios, podrá generar un aviso en el sistema.</li>
+<li><p>El usuario, teniendo los permisos necesarios, podrá generar un aviso en el sistema.</p></li>
 </ul>
 </li>
 <li><strong>Prioridad</strong>:<ul>
-<li>Media.</li>
+<li><p>Media.</p></li>
 </ul>
 </li>
 <li><strong>Secuencia de acciones</strong>:<ol>
-<li>El usuario, identificado, inicia la creación de un nuevo aviso.</li>
-<li>Se manda el nuevo aviso al servidor tan pronto como se obtenga conectividad.</li>
-<li>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</li>
+<li><p>El usuario, identificado, inicia la creación de un nuevo aviso.</p></li>
+<li><p>Se manda el nuevo aviso al servidor tan pronto como se obtenga conectividad.</p></li>
+<li><p>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</p></li>
 </ol>
 </li>
 </ul>
 <h2 id="43-modificar-datos-de-aviso"><a name="user-content-43-modificar-datos-de-aviso" href="#43-modificar-datos-de-aviso" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.3. Modificar datos de aviso</h2>
 <ul>
 <li><strong>Descripción</strong>:<ul>
-<li>El usuario, teniendo los permisos necesarios, podrá modificar avisos ya existentes.</li>
+<li><p>El usuario, teniendo los permisos necesarios, podrá modificar avisos ya existentes.</p></li>
 </ul>
 </li>
 <li><strong>Prioridad</strong>:<ul>
-<li>Media.</li>
+<li><p>Media.</p></li>
 </ul>
 </li>
 <li><strong>Secuencia de acciones</strong>:<ol>
-<li>El ususario, identificado, inicia la modificación de un aviso.</li>
-<li>Se manda el aviso modificado al servidor tan pronto como se obtenga conectividad.</li>
-<li>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</li>
+<li><p>El ususario, identificado, inicia la modificación de un aviso.</p></li>
+<li><p>Se manda el aviso modificado al servidor tan pronto como se obtenga conectividad.</p></li>
+<li><p>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</p></li>
 </ol>
 </li>
 </ul>
 <h2 id="44-anadir-elementos-del-gis"><a name="user-content-44-anadir-elementos-del-gis" href="#44-anadir-elementos-del-gis" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.4. Añadir elementos del GIS</h2>
 <ul>
 <li><strong>Descripción</strong>:<ul>
-<li>El usuario podrá añadir información sobre la geolocalización real del punto de origen de un aviso.</li>
+<li><p>El usuario podrá añadir información sobre la geolocalización real del punto de origen de un aviso.</p></li>
 </ul>
 </li>
 <li><strong>Prioridad</strong>:<ul>
-<li>Media.</li>
+<li><p>Media.</p></li>
 </ul>
 </li>
 <li><strong>Secuencia de acciones</strong>:<ol>
-<li>El usuario, identificado, selecciona la opción de añadir geolocalización a un aviso.</li>
-<li>El sistema, obtiene las coordenadas a través de GPS.</li>
-<li>El aviso se actualiza y se manda el aviso modificado al servidor tan pronto como se obtenga conectividad.</li>
-<li>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</li>
+<li><p>El usuario, identificado, selecciona la opción de añadir geolocalización a un aviso.</p></li>
+<li><p>El sistema, obtiene las coordenadas a través de GPS.</p></li>
+<li><p>El aviso se actualiza y se manda el aviso modificado al servidor tan pronto como se obtenga conectividad.</p></li>
+<li><p>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</p></li>
 </ol>
 </li>
 </ul>
 <h2 id="45-reasignar-aviso"><a name="user-content-45-reasignar-aviso" href="#45-reasignar-aviso" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.5. Reasignar aviso</h2>
 <ul>
 <li><strong>Descripción</strong>:<ul>
-<li>El usuario podrá ceder la gestión de un aviso a otro supervisor.</li>
+<li><p>El usuario podrá ceder la gestión de un aviso a otro supervisor.</p></li>
 </ul>
 </li>
 <li><strong>Prioridad</strong>:<ul>
-<li>Baja.</li>
+<li><p>Baja.</p></li>
 </ul>
 </li>
 <li><strong>Secuencia de acciones</strong>:<ol>
-<li>El usuario, identificado, selecciona la opción de reasignar un aviso determinado.</li>
-<li>El usuario selecciona el nuevo supervisor de una lista.</li>
-<li>El aviso se actualiza y se manda el aviso modificado al servidor tan pronto como se obtenga conectividad.</li>
-<li>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</li>
+<li><p>El usuario, identificado, selecciona la opción de reasignar un aviso determinado.</p></li>
+<li><p>El usuario selecciona el nuevo supervisor de una lista.</p></li>
+<li><p>El aviso se actualiza y se manda el aviso modificado al servidor tan pronto como se obtenga conectividad.</p></li>
+<li><p>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</p></li>
 </ol>
 </li>
 </ul>
 <h2 id="46-cambiar-diagnostico"><a name="user-content-46-cambiar-diagnostico" href="#46-cambiar-diagnostico" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.6. Cambiar diagnóstico</h2>
 <ul>
 <li><strong>Descripción</strong>:<ul>
-<li>El usuario podrá modificar el diagnóstico de un aviso, así como diagnosticar un aviso anteriormente a la generación de ninguna orden de trabajo.</li>
+<li><p>El usuario podrá modificar el diagnóstico de un aviso, así como diagnosticar un aviso anteriormente a la generación de ninguna orden de trabajo.</p></li>
 </ul>
 </li>
 <li><strong>Prioridad</strong>:<ul>
-<li>Media.</li>
+<li><p>Media.</p></li>
 </ul>
 </li>
 <li><strong>Secuencia de acciones</strong>:<ol>
-<li>El usuario, identificado, inicia la modificación del diagnóstico de un aviso.</li>
-<li>El usuario modifica el diagnóstico del aviso.</li>
-<li>El aviso, modificado, se manda al servidor tan pronto como se obtenga conectividad.</li>
-<li>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</li>
+<li><p>El usuario, identificado, inicia la modificación del diagnóstico de un aviso.</p></li>
+<li><p>El usuario modifica el diagnóstico del aviso.</p></li>
+<li><p>El aviso, modificado, se manda al servidor tan pronto como se obtenga conectividad.</p></li>
+<li><p>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</p></li>
 </ol>
 </li>
 </ul>
 <h2 id="47-generar-una-orden-de-trabajo"><a name="user-content-47-generar-una-orden-de-trabajo" href="#47-generar-una-orden-de-trabajo" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.7. Generar una Orden de Trabajo</h2>
 <ul>
 <li><strong>Descripción</strong>:<ul>
-<li>El usuario podrá crear una nueva orden de trabajo para tratar el origen de un aviso.</li>
+<li><p>El usuario podrá crear una nueva orden de trabajo para tratar el origen de un aviso.</p></li>
 </ul>
 </li>
 <li><strong>Prioridad</strong>:<ul>
-<li>Alta.</li>
+<li><p>Alta.</p></li>
 </ul>
 </li>
 <li><strong>Secuencia de acciones</strong>:<ol>
-<li>El supervisor, identificado previamente, selecciona la opción de generar una nueva orden de trabajo sobre un aviso.</li>
-<li>El supervisor cumplimenta la información básica de la orden de trabajo.</li>
-<li>La orden de trabajo se asigna a una brigada o una subcontrata.</li>
-<li>La orden de trabajo se envía al servidor tan pronto como se obtenga conectividad.</li>
-<li>El servidor manda una notificación sobre la nueva orden de trabajo que reciben los trabajadores.</li>
+<li><p>El supervisor, identificado previamente, selecciona la opción de generar una nueva orden de trabajo sobre un aviso.</p></li>
+<li><p>El supervisor cumplimenta la información básica de la orden de trabajo.</p></li>
+<li><p>La orden de trabajo se asigna a una brigada o una subcontrata.</p></li>
+<li><p>La orden de trabajo se envía al servidor tan pronto como se obtenga conectividad.</p></li>
+<li><p>El servidor manda una notificación sobre la nueva orden de trabajo que reciben los trabajadores.</p></li>
 </ol>
 </li>
 </ul>
 <h2 id="48-completar-aviso"><a name="user-content-48-completar-aviso" href="#48-completar-aviso" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.8. Completar aviso</h2>
 <ul>
 <li><strong>Descripción</strong>:<ul>
-<li>El supervisor podrá completar un aviso con el fin de cerrarlo.</li>
+<li><p>El supervisor podrá completar un aviso con el fin de cerrarlo.</p></li>
 </ul>
 </li>
 <li><strong>Prioridad</strong>:<ul>
-<li>Alta.</li>
+<li><p>Alta.</p></li>
 </ul>
 </li>
 <li><strong>Secuencia de acciones</strong>:<ol>
-<li>El supervisor, identificado previamente, selecciona la opción de completar un aviso.</li>
-<li>La información del cierre del aviso se envía al servidor.</li>
-<li>El servidor realiza la acción.</li>
-<li>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</li>
+<li><p>El supervisor, identificado previamente, selecciona la opción de completar un aviso.</p></li>
+<li><p>La información del cierre del aviso se envía al servidor.</p></li>
+<li><p>El servidor realiza la acción.</p></li>
+<li><p>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</p></li>
 </ol>
 </li>
 </ul>
 <h2 id="49-asignar-adjuntos"><a name="user-content-49-asignar-adjuntos" href="#49-asignar-adjuntos" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.9. Asignar adjuntos</h2>
 <ul>
 <li><strong>Descripción</strong>:<ul>
-<li>El usuario podrá añadir información en diferentes formatos de fichero.</li>
+<li><p>El usuario podrá añadir información en diferentes formatos de fichero.</p></li>
 </ul>
 </li>
 <li><strong>Prioridad</strong>:<ul>
-<li>Media.</li>
+<li><p>Media.</p></li>
 </ul>
 </li>
 <li><strong>Secuencia de acciones</strong>:<ol>
-<li>El usuario, identificado previamente pertinente, selecciona la opción de añadir adjunto especificando el formato de fichero, así como su nombre y una pequeña descripción.</li>
-<li>El sistema envia el fichero al servidor.</li>
-<li>El servidor realiza la acción.</li>
-<li>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</li>
+<li><p>El usuario, identificado previamente pertinente, selecciona la opción de añadir adjunto especificando el formato de fichero, así como su nombre y una pequeña descripción.</p></li>
+<li><p>El sistema envia el fichero al servidor.</p></li>
+<li><p>El servidor realiza la acción.</p></li>
+<li><p>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</p></li>
 </ol>
 </li>
 </ul>
 <h2 id="410-completar-una-orden-de-trabajo"><a name="user-content-410-completar-una-orden-de-trabajo" href="#410-completar-una-orden-de-trabajo" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4.10 Completar una Orden de Trabajo</h2>
 <ul>
 <li><strong>Descripción</strong>:<ul>
-<li>El operario encargado de finalizar orden de trabajo para archivar la orden de trabajo.</li>
+<li><p>El operario encargado de finalizar orden de trabajo para archivar la orden de trabajo.</p></li>
 </ul>
 </li>
 <li><strong>Prioridad</strong>:<ul>
-<li>Alta</li>
+<li><p>Alta.</p></li>
 </ul>
 </li>
 <li><strong>Secuencia de acciones</strong>:<ol>
-<li>El operario encargado, identificado previamente, selecciona la opción de finalizar orden de trabajo.</li>
-<li>Se transmite la orden al servidor.</li>
-<li>El servidor realiza la acción.</li>
-<li>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</li>
+<li><p>El operario encargado, identificado previamente, selecciona la opción de finalizar orden de trabajo.</p></li>
+<li><p>Se transmite la orden al servidor.</p></li>
+<li><p>El servidor realiza la acción.</p></li>
+<li><p>El servidor responde con un mensaje de confirmación o de error, en función de lo sucedido en el proceso.</p></li>
 </ol>
 </li>
 </ul></article>
