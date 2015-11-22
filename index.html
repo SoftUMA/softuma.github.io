@@ -25,8 +25,8 @@
 	<div class="container bloc-lg">
 		<div class="row bounceIn animated">
 			<div class="col-sm-12">
-				<img src="img/angular-circle.png" class="img-responsive center-block mg-sm bounceIn animDelay04 animated" />
-				<h1 class="mg-md text-center bounceIn animDelay06 sm-shadow tc-carmine-pink animated">
+				<img src="img/angular-circle.png" class="img-responsive center-block mg-sm bounceIn animDelay04 animated" style="display: none;" id="comein0" />
+				<h1 class="mg-md text-center bounceIn animDelay06 sm-shadow tc-carmine-pink animated" style="display: none;" id="comein1">
 					Software Engineering UMA
 				</h1>
 			</div>
@@ -212,5 +212,12 @@
 </div>
 
 </div>
+
+<script>
+	$(document).ready(function() {
+		document.getElementById('comein0').setAttribute('style', 'display', 'block');
+		document.getElementById('comein1').setAttribute('style', 'display', 'block');
+	});
+</script>
 </body>
 </html>
