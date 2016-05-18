@@ -24,8 +24,8 @@ En base a las vulnerabilidades antes mencionadas, se abren diferentes __vectores
 - Inyección SQL.
 - Keyloggers.
 - Suplantación de usuarios.
-	- Voluntaria.
-	- Involuntaria.
+  - Voluntaria.
+  - Involuntaria.
 - Escalada de permisos en el sistema.
 
 Usando estos vectores de ataque, el atacante puede conseguir __permisos de administración__ en el sistema, __datos privados__ almacenados de usuarios, etc.

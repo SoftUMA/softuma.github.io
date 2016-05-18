@@ -6,33 +6,33 @@
 
 ## Asistentes a la reunión
 
-- Cheng Deng
-- Francisco Sánchez Morón
-- Andrés Tamayo
+- Cheng Deng.
+- Francisco Sánchez Morón.
+- Andrés Tamayo Jiménez.
 
 ## Fecha y hora
 
-- Reunidos el día 11 de Mayo del 2016
-- Duración de la reunión: 12:30pm - 5:30
+- Reunidos el día 11 de Mayo del 2016.
+- Duración de la reunión: 12:30pm - 5:30pm.
 
-## Platamfor de reunión
+## Platamforma de reunión
 
-- Reunión presencial
+- Reunión presencial.
 
 ## Puntos del día
 
-- Clasificacion de los riesgos
-- Diagrama de riesgos
-- Aprendizaje de uso de Coras
+1. Aprendizaje de uso de Coras.
+2. Clasificación de los riesgos.
+3. Diagrama de riesgos.
 
 ## Desarrollo de la reunión
 
-1. __Clasificacion de los riesgos__:
-2. __Diagrama de riesgos__:
-  - Ataque de integridad
-    - Suplantacion voluntaria de identidad
-    - Ataques virales
-    - Inyeccion SQL
+1. __Aprendizaje de uso de Coras__:
+  - Navegación, lectura y comprensión por la documentación de Coras. Primer contacto con el programa y pruebas de modelado de diagramas con Coras.
+2. __Clasificación de los riesgos__:
+  - Clasificación de riesgos en tres clases diferentes. Dependiendo de si atentan contra la confidencialidad de datos de usuarios y del sistema, contra la disponibilidad de sercicios que ofrece el sistema o a la integridad de los componentes y módulos del sistema.
+3. __Diagrama de riesgos__:
+  - Realizamos los diagramas de amenazas en Coras. Uno de amenazas a la confidencialidad, otro de amenazas a la disponibilidad y otro de amenazas a la integridad.
 
 --------
 

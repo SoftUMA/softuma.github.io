@@ -33,76 +33,76 @@
 ### Directo
 
 - Corte del suministro eléctrico
-	- Impacto de riesgo: __medio__
-	- Probabilidad de riesgo: __muy bajo__
-	- El riesgo es de `0.12`
+  - Impacto de riesgo: __medio__
+  - Probabilidad de riesgo: __muy bajo__
+  - El riesgo es de `0.12`
 - Destrozo por tercero
-	- Impacto de riesgo: __bajo__
-	- Probabilidad de riesgo: __bajo__
-	- El riesgo es de `0.16`
+  - Impacto de riesgo: __bajo__
+  - Probabilidad de riesgo: __bajo__
+  - El riesgo es de `0.16`
 - Suplantación voluntaria de identidad
-	- Impacto de riesgo: __bajo__
-	- Probabilidad de riesgo: __alto__
-	- El riesgo es de `0.32`
+  - Impacto de riesgo: __bajo__
+  - Probabilidad de riesgo: __alto__
+  - El riesgo es de `0.32`
 - Keyloggers
-	- Impacto de riesgo: __bajo__
-	- Probabilidad de riesgo: __muy bajo__
-	- El riesgo es de `0.08`
+  - Impacto de riesgo: __bajo__
+  - Probabilidad de riesgo: __muy bajo__
+  - El riesgo es de `0.08`
 - Ataques virales
-	- Impacto de riesgo: __muy alto__
-	- Probabilidad de riesgo: __muy alto__
-	- El riesgo es de `1`
+  - Impacto de riesgo: __muy alto__
+  - Probabilidad de riesgo: __muy alto__
+  - El riesgo es de `1`
 - Inyección SQL
-	- Impacto de riesgo: __muy alto__
-	- Probabilidad de riesgo: __medio__
-	- El riesgo es de `0.48`
+  - Impacto de riesgo: __muy alto__
+  - Probabilidad de riesgo: __medio__
+  - El riesgo es de `0.48`
 - Session hijacking
-	- Impacto de riesgo: __muy alto__
-	- Probabilidad de riesgo: __alto__
-	- El riesgo es de `0.64`
+  - Impacto de riesgo: __muy alto__
+  - Probabilidad de riesgo: __alto__
+  - El riesgo es de `0.64`
 - Vectores de ataque web
-	- Impacto de riesgo: __muy alto__
-	- Probabilidad de riesgo: __muy alto__
-	- El riesgo es de `1`
+  - Impacto de riesgo: __muy alto__
+  - Probabilidad de riesgo: __muy alto__
+  - El riesgo es de `1`
 - Ataque DDoS
-	- Impacto de riesgo: __muy alto__
-	- Probabilidad de riesgo: __medio__
-	- El riesgo es de `0.48`
+  - Impacto de riesgo: __muy alto__
+  - Probabilidad de riesgo: __medio__
+  - El riesgo es de `0.48`
 
 ### Indirecto
 
 - Fallo de persistencia
-	- Impacto de riesgo: __muy alto__
-	- Probabilidad de riesgo: __bajo__
-	- El riesgo es de `0.4`
+  - Impacto de riesgo: __muy alto__
+  - Probabilidad de riesgo: __bajo__
+  - El riesgo es de `0.4`
 - Suplantación involuntaria
-	- Impacto de riesgo: __muy bajo__
-	- Probabilidad de riesgo: __muy bajo__
-	- El riesgo es de `0.2`
+  - Impacto de riesgo: __muy bajo__
+  - Probabilidad de riesgo: __muy bajo__
+  - El riesgo es de `0.2`
 - Inclemencias metereológicas (tormentas...)
-	- Impacto de riesgo: __bajo__
-	- Probabilidad de riesgo: __muy alto__
-	- El riesgo es de `0.32`
+  - Impacto de riesgo: __bajo__
+  - Probabilidad de riesgo: __muy alto__
+  - El riesgo es de `0.32`
 - Desastres naturales (movimientos sísmicos...)
-	- Impacto de riesgo: __muy alto__
-	- Probabilidad de riesgo: __muy bajo__
-	- El riesgo es de `0.2`
+  - Impacto de riesgo: __muy alto__
+  - Probabilidad de riesgo: __muy bajo__
+  - El riesgo es de `0.2`
 - Sistemas de almacenamiento deteriorados
-	- Impacto de riesgo: __alto__
-	- Probabilidad de riesgo: __bajo__
-	- El riesgo es de `0.4`
+  - Impacto de riesgo: __alto__
+  - Probabilidad de riesgo: __bajo__
+  - El riesgo es de `0.4`
 - Cuello de botella en la conexión servidor-aplicaciones
-	- Impacto de riesgo: __alto__
-	- Probabilidad de riesgo: __medio__
-	- El riesgo es de `0.48`
+  - Impacto de riesgo: __alto__
+  - Probabilidad de riesgo: __medio__
+  - El riesgo es de `0.48`
 - Error en el servicio debido a operaciones de mantenimiento
-	- Impacto de riesgo: __alto__
-	- Probabilidad de riesgo: __alto__
-	- El riesgo es de `0.64`
+  - Impacto de riesgo: __alto__
+  - Probabilidad de riesgo: __alto__
+  - El riesgo es de `0.64`
 - Pérdida de dispositivos de identificación
-	- Impacto de riesgo: __muy bajo__
-	- Probabilidad de riesgo: __medio__
-	- El riesgo es de `0.12`
+  - Impacto de riesgo: __muy bajo__
+  - Probabilidad de riesgo: __medio__
+  - El riesgo es de `0.12`
 
 --------
 

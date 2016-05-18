@@ -6,28 +6,35 @@
 
 ## Asistentes a la reunión
 
-- Cheng Deng
-- Ignacio Huesa
-- Francisco Sánchez Morón
-- Andrés Tamayo
+- Carlos Aguilar de la Morena.
+- Cheng Deng.
+- Ignacio Huesa Cerdán.
+- Francisco Sánchez Morón.
+- Andrés Tamayo Jiménez.
 
 ## Fecha y hora
 
-- Reunidos el día 18 de Mayo del 2016
-- Duración de la reunión: 1:25pm - 
+- Reunidos el día 18 de Mayo del 2016.
+- Duración de la reunión: 1:25pm - 3:30pm.
 
-## Platamfor de reunión
+## Plataforma de reunión
 
-- Reunión por Skype
+- Reunión por Skype.
 
 ## Puntos del día
 
-- 
+1. Descripción del Diagrama de Confidencialidad.
+2. Descripción del Diagrama de Disponibilidad.
+3. Descripción del Diagrama de Integridad.
 
 ## Desarrollo de la reunión
 
-1. __todo__:
-  - todo
+1. __Descripción del Diagrama de Confidencialidad__:
+  - Redactamos una síntesis escrita del diagrama de confidencialidad.
+2. __Descripción del Diagrama de Disponibilidad__:
+  - Redactamos una síntesis escrita del diagrama de disponibilidad.
+3. __Descripción del Diagrama de Integridad__:
+  - Redactamos una síntesis escrita del diagrama de integridad.
 
 --------
 
