@@ -16,6 +16,7 @@
 	- [05 / 05 / 2016](/projects/security/actas/acta-4)
 	- [11 / 05 / 2016](/projects/security/actas/acta-5)
 	- [18 / 05 / 2016](/projects/security/actas/acta-6)
+	- [23 / 05 / 2016](/projects/security/actas/acta-7)
 
 ## Autores
 
