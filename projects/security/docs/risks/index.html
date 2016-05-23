@@ -1,0 +1,1322 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+</style><title>risks</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-análisis-de-riesgos" class="anchor" href="#an%C3%A1lisis-de-riesgos" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Análisis de Riesgos</h1>
+
+<p><a href="/projects/security">Volver al Inicio</a></p>
+
+<hr>
+
+<p><a href="/projects/security/docs/risks/risks.pdf">Descargar como PDF</a></p>
+
+<hr>
+
+<h2>
+<a id="user-content-escenario-1-puntos-de-carga-configurados-en-zonas-abiertas" class="anchor" href="#escenario-1-puntos-de-carga-configurados-en-zonas-abiertas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Escenario 1: puntos de carga configurados en zonas abiertas</h2>
+
+<ul>
+<li>
+<strong>Área físico en el que se desarrolla el punto de carga</strong>:
+
+<ul>
+<li>Grados de aislamiento y control: El aislamiento en este caso es nulo en cuanto a barreras físicas, tan solo existen medidas de seguridad pasivas o de supervisión monitorizadas.</li>
+<li>Facilidad de acceso al área: Al tratarse de zonas abiertas, la facilidad de acceso es total.</li>
+<li>Entorno: Al ser una zona abierta, las amenazas directas que requieran presencia física son más fáciles de llevar a cabo.</li>
+</ul>
+</li>
+<li>
+<strong>Comunicación entre el cliente y el punto de carga</strong>:
+
+<ul>
+<li>Modos de acceso:
+
+<ul>
+<li>RFID / NFC: Funcionalidad incluida en los últimos smarthphones que permite una comunicación a muy corta distancia y que puede servir como identificación del usuario al ser este el portador univoco del dispositivo. Una ventaja es que hace las veces de clave física. Una desventaja podría ser que dispositivos más antiguos no tuvieran soporte para esta tecnología.</li>
+<li>OTP (One Time Password): Método de autenticación basado en un envío de una contraseña temporal al usuario, por norma general, vía SMS, email...</li>
+<li>Usuario / Contraseña: Sistema de identificación más popular y extendido hoy día.</li>
+<li>QR Code: Similar a la identificación OTP, con la diferencia que el usuario no ha de leer / memorizar ningún código, siendo el móvil el que realiza esta actividad.</li>
+<li>Huella dactilar: Sistema de seguridad biométrica basada en las hendiduras de las huellas dactilares de los dedos de la manos. Una ventaja es que el usuario no necesita ningún soporte. Un posible inconveniente es que habría que ajustar el equilibrio entre facilidad de acceso y seguridad de identificación.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<strong>El tipo de comunicación entre los diferentes actores y el sistema de control</strong>:
+
+<ul>
+<li>
+<strong>Listado de actores</strong>:
+
+<ul>
+<li>Personal de mantenimiento.</li>
+<li>Clientes (a través de interfaces web o móvil).</li>
+<li>Puntos de carga.</li>
+<li>Proveedores de energía.</li>
+<li>Servidores.</li>
+</ul>
+</li>
+<li>
+<strong>Obervaciones sobre las comunicaciones actor-sistema</strong>: El hecho de que las comunicaciones se realicen a través de internet puede conllevar posibles ataques remotos. En el caso de las comunicaciones que usen tecnologías inalámbricas, estos ataques serían más accesibles para los supuestos atacantes y más difíciles de detectar; mientras que en el caso de comunicaciones por cable, el ataque deviene más complejo, aunque no imposible.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-escenario-2-puntos-de-carga-configurados-en-zonas-cerradas" class="anchor" href="#escenario-2-puntos-de-carga-configurados-en-zonas-cerradas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Escenario 2: puntos de carga configurados en zonas cerradas</h2>
+
+<ul>
+<li>
+<strong>Área físico en el que se desarrolla el punto de carga</strong>:
+
+<ul>
+<li>Grados de aislamiento y control: El grado de aislamiento es superior al que podemos encontrar en los escenarios del primer tipo, lo que hace más fácil el control de acceso y puede perjudicar las comunicaciones inalámbricas.</li>
+<li>Facilidad de acceso al área: Si la zona cerrada en concreto incluye un sistema de seguridad para el acceso, se limitaría el rango de actores humanos que podrían acceder a este servicio.</li>
+<li>Entorno: Un entorno cerrado supone un mayor grado de aislamiento en cuanto a amenazas directas.</li>
+</ul>
+</li>
+<li>
+<strong>Comunicación entre el cliente y el punto de carga</strong>:
+
+<ul>
+<li>Los medios de comunicación entre el cliente y el punto de carta en este tipo de escenario no difiere con los del primero.</li>
+</ul>
+</li>
+<li>
+<strong>El tipo de comunciación entre los diferentes actores y el sistema de control</strong>:
+
+<ul>
+<li>Al igual que en el caso de las comunicaciones entre el cliente y los puntos de carga, no hay mucho que decir en cuanto a las comunicaciones entre actores y el sistema de control que no se haya dicho ya en los escenarios del tipo 1.</li>
+<li>Un posible matiz a tener en cuenta: si el punto de carga se trata de uno privado, instalado en una propiedad privada y para uso de un único individuo propietario, se podrían evadir amenazas en cuanto a los métodos de identificación.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-assets" class="anchor" href="#assets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Assets:</h2>
+
+<p><a href="https://camo.githubusercontent.com/d60a2be6f5841e97a2e56be9d29bc53a3a4f0709/68747470733a2f2f692e696d6775722e636f6d2f4f6d375a67574a2e706e67" target="_blank"><img src="https://camo.githubusercontent.com/d60a2be6f5841e97a2e56be9d29bc53a3a4f0709/68747470733a2f2f692e696d6775722e636f6d2f4f6d375a67574a2e706e67" alt="assets" data-canonical-src="https://i.imgur.com/Om7ZgWJ.png" style="max-width:100%;"></a></p>
+
+<ul>
+<li>
+<strong>Físicos</strong>:
+
+<ul>
+<li>Torre de recarga.</li>
+<li>Cableado de comunicaciones.</li>
+<li>Cableado eléctrico.</li>
+<li>Suministro eléctrico (comunicación unidireccional).</li>
+<li>Terminal.</li>
+<li>Cluster servidores.</li>
+<li>Vehículo del cliente.</li>
+<li>Sistemas de seguridad (activos y pasivos).</li>
+<li>Sistemas de comunicación con el usuario (lector de tarjetas y de NFC).</li>
+<li>Dispositivos de comunicación (dispositivos móviles, tarjetas de crédito/débito).</li>
+</ul>
+</li>
+<li>
+<strong>Digitales</strong>:
+
+<ul>
+<li>Datos del cliente (datos de pago, datos de consumo, datos personales).</li>
+<li>Datos de sistema (datos de pago, datos de consumo, datos personales).</li>
+<li>Servidor web.</li>
+<li>Servidor base de datos.</li>
+<li>Aplicación móvil.</li>
+<li>Aplicación web.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-amenazas" class="anchor" href="#amenazas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Amenazas:</h2>
+
+<ul>
+<li>
+<strong>Directas</strong>:
+
+<ul>
+<li>Corte del suministro eléctrico.</li>
+<li>Destrozo por tercero.</li>
+<li>Suplantación voluntaria de identidad.</li>
+<li>Keyloggers.</li>
+<li>Ataques virales.</li>
+<li>Inyección SQL.</li>
+<li>Session hijacking.</li>
+<li>Vectores de ataque web.</li>
+<li>Ataque DDoS.</li>
+</ul>
+</li>
+<li>
+<strong>Indirectas</strong>:
+
+<ul>
+<li>Suplantación involuntaria.</li>
+<li>Inclemencias metereológicas (tormentas).</li>
+<li>Desastres naturales (movimientos sísmicos, maremotos...).</li>
+<li>Sistemas de almacenamiento deteriorados.</li>
+<li>Cuello de botella en la conexión servidor-aplicaciones.</li>
+<li>Error en el servicio debido a operaciones de mantenimiento.</li>
+<li>Pérdida de dispositivos de identificación.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="user-content-vulnerabilidades" class="anchor" href="#vulnerabilidades" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Vulnerabilidades</h2>
+
+<ul>
+<li>Fallos en el sistema de parseado de sentencias SQL.</li>
+<li>Deficiencias en los sistemas de prevención/reacción.</li>
+<li>Falta de aislamiento en el hardware.</li>
+<li>Errores del sistema/diseño.</li>
+<li>Dispositivos fáciles de robar.</li>
+<li>No existen medidas de anulación de dispositivos.</li>
+<li>Sistema de respaldos durante mantenimiento inexistente.</li>
+<li>Falta de mantenimiento.</li>
+<li>Control de acceso ineficiente.</li>
+<li>Ausencia de firewall.</li>
+<li>Aislamiento insuficiente.</li>
+<li>Sistema eléctrico inseguro.</li>
+</ul>
+
+<h2>
+<a id="user-content-amenazas-a-la-confidencialidad" class="anchor" href="#amenazas-a-la-confidencialidad" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Amenazas a la Confidencialidad</h2>
+
+<h3>
+<a id="user-content-diagrama-de-amenazas" class="anchor" href="#diagrama-de-amenazas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Diagrama de amenazas</h3>
+
+<p><a href="https://camo.githubusercontent.com/7cd8bbb9a39679d20de18a5d92ff4d3adbc61ec4/68747470733a2f2f692e696d6775722e636f6d2f743335575446652e706e67" target="_blank"><img src="https://camo.githubusercontent.com/7cd8bbb9a39679d20de18a5d92ff4d3adbc61ec4/68747470733a2f2f692e696d6775722e636f6d2f743335575446652e706e67" alt="diagrama-confidencialidad" data-canonical-src="https://i.imgur.com/t35WTFe.png" style="max-width:100%;"></a></p>
+
+<h3>
+<a id="user-content-lista-de-amenazas" class="anchor" href="#lista-de-amenazas" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lista de amenazas</h3>
+
+<ol>
+<li>Suplantación voluntaria de identidad
+
+<ul>
+<li>Descripción: el atacante consigue hacerse pasar, de forma fraudulenta, por un usuario sin consentimiento ni conocimiento por parte de éste, con la finalidad de acceder a los datos o assets del sistema.</li>
+<li>Impacto de riesgo: <strong>bajo</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>alta</strong>
+</li>
+<li>Plan de contingencia y prevención: anulación del dispositivo o clave de identificación afectado por el ataque. Expedición de un nuevo dispositivo de identificación.</li>
+</ul>
+</li>
+<li>Keyloggers
+
+<ul>
+<li>Descripción: uso de un programa que guarda silenciosamente en un log cualquier pulsación de teclas que se lleve a cabo en la máquina de la víctima.</li>
+<li>Impacto de riesgo: <strong>bajo</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>muy baja</strong>
+</li>
+<li>Plan de contingencia y prevención: aislamiento inmediato de la máquina afectada y análisis y limpieza posterior. Ofrecer formación a los empleados/usuarios de las máquinas.</li>
+</ul>
+</li>
+<li>Ataques virales
+
+<ul>
+<li>Descripción: inyección de código malicioso en la máquina víctima con el fin de hacerse con el control de ésta de cualquier manera (trojans, worms, keyloggers...), con la intención de acceder a los datos o assets del sistema.</li>
+<li>Impacto de riesgo: <strong>muy alto</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>muy alta</strong>
+</li>
+<li>Plan de contingencia y prevención: aislamiento inmediato de la máquina afectada y análisis y limpieza posterior. Ofrecer formación a los empleados/usuarios de las máquinas.</li>
+</ul>
+</li>
+<li>Inyección SQL
+
+<ul>
+<li>Descripción: uso de scripts específicos de SQL con el fin de engañar al procesador de dichas sentencias y conseguir ejecutar una sentencia no autorizada en el servidor de la base de datos, pudiendo así insertar, modificar o eliminar datos de ésta.</li>
+<li>Impacto de riesgo: <strong>muy alto</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>media</strong>
+</li>
+<li>Plan de contingencia y prevención: isolación de la base de datos inmediata y arreglo del sistema de parseo de sentencias SQL. Comprobación previa a ejecución de los campos introducidos por el usuario en busca de posibles intentos de explotación.</li>
+</ul>
+</li>
+</ol>
+
+<h3>
+<a id="user-content-matriz-p-i" class="anchor" href="#matriz-p-i" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Matriz P-I</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Impacto \ Probabilidad</th>
+<th align="center">Muy alto</th>
+<th align="center">Alto</th>
+<th align="center">Medio</th>
+<th align="center">Bajo</th>
+<th align="center">Muy bajo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Muy Alto</td>
+<td align="center" style="background-color: #800000; color: white;">3</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #800000; color: white;">4</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+</tr>
+<tr>
+<td align="center">Alto</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+</tr>
+<tr>
+<td align="center">Medio</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">-</td>
+</tr>
+<tr>
+<td align="center">Bajo</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">1</td>
+<td align="center" style="background-color: #e60000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">-</td>
+<td align="center" style="background-color: #ff1a1a; color: white;">2</td>
+</tr>
+<tr>
+<td align="center">Muy Bajo</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">-</td>
+<td align="center" style="background-color: #ff1a1a; color: white;">-</td>
+<td align="center" style="background-color: #ff4d4d; color: white;">-</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="user-content-amenazas-a-la-disponibilidad" class="anchor" href="#amenazas-a-la-disponibilidad" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Amenazas a la Disponibilidad</h2>
+
+<h3>
+<a id="user-content-diagrama-de-amenazas-1" class="anchor" href="#diagrama-de-amenazas-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Diagrama de amenazas</h3>
+
+<p><a href="https://camo.githubusercontent.com/b5fb48866a6c1f4ca1969accd842d0f38cc1f30b/68747470733a2f2f692e696d6775722e636f6d2f6a6e73676a42332e706e67" target="_blank"><img src="https://camo.githubusercontent.com/b5fb48866a6c1f4ca1969accd842d0f38cc1f30b/68747470733a2f2f692e696d6775722e636f6d2f6a6e73676a42332e706e67" alt="diagrama-disponibilidad" data-canonical-src="https://i.imgur.com/jnsgjB3.png" style="max-width:100%;"></a></p>
+
+<h3>
+<a id="user-content-lista-de-amenazas-1" class="anchor" href="#lista-de-amenazas-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lista de amenazas</h3>
+
+<ol>
+<li>Corte del suministro eléctrico
+
+<ul>
+<li>Descripción: si se consiguiese bloquear la conexión, mediante un corte en el suministro eléctrico, entre el SmartGrid y el servidor, el atacante podría interferir en dicha comunicación, modificando, robando o llevando a cabo cualquier otra finalidad que le interese.</li>
+<li>Impacto de riesgo: <strong>medio</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>muy baja</strong>
+</li>
+<li>Plan de contingencia y prevención: instalación de generadores de energía dedicados a la alimentación de los servidores. Establecer un sistema de comprobación de cortes en el suministro eléctrico que cambie la fuente de alimentación a la ofrecida por dichos generadores.</li>
+</ul>
+</li>
+<li>Destrozo por tercero
+
+<ul>
+<li>Descripción: cualquier daño producido en el sistema por la actuación física de un atacante.</li>
+<li>Impacto de riesgo: <strong>bajo</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>baja</strong>
+</li>
+<li>Plan de contingencia y prevención: arreglo de las instalaciones afectadas. Asegurar las instalaciones con aseguradoras.</li>
+</ul>
+</li>
+<li>Ataques virales
+
+<ul>
+<li>Descripción: inyección de código malicioso en la máquina víctima con el fin de hacerse con el control de ésta de cualquier manera (trojans, worms, keyloggers...), con la finalidad de impedir el uso de cualquier servicio que ofrezca el sistema.</li>
+<li>Impacto de riesgo: <strong>muy alto</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>muy alta</strong>
+</li>
+<li>Plan de contingencia y prevención: aislamiento inmediato de la máquina afectada y análisis y limpieza posterior. Ofrecer formación a los empleados/usuarios de las máquinas.</li>
+</ul>
+</li>
+<li>Inyección SQL
+
+<ul>
+<li>Descripción: uso de scripts específicos de SQL con el fin de engañar al procesador de dichas sentencias y conseguir ejecutar una sentencia no autorizada en el servidor de la base de datos, pudiendo así insertar, modificar o eliminar datos de ésta.</li>
+<li>Impacto de riesgo: <strong>muy alto</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>media</strong>
+</li>
+<li>Plan de contingencia y prevención: isolación de la base de datos inmediata y arreglo del sistema de parseo de sentencias SQL. Comprobación previa a ejecución de los campos introducidos por el usuario en busca de posibles intentos de explotación.</li>
+</ul>
+</li>
+<li>Ataque DDoS
+
+<ul>
+<li>Descripción: ataque consistente en el envío repetitivo y masivo de paquetes de red a un servidor que esté expuesto, de manera que éste se sobrecarge y no sea capaz de responder peticiones legítimas.</li>
+<li>Impacto de riesgo: <strong>muy alto</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>media</strong>
+</li>
+<li>Plan de contingencia y prevención: uso de firewalls o servicios de terceros, como <a href="https://www.cloudflare.com/">CloudFlare</a>, que eviten las ocurrencias de dichos ataques.</li>
+</ul>
+</li>
+<li>Inclemencias metereológicas
+
+<ul>
+<li>Descripción: daños producidos en las interfaces físicas debido a desgaste, erosión, por el clima.</li>
+<li>Impacto de riesgo: <strong>bajo</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>muy alta</strong>
+</li>
+<li>Plan de contingencia y prevención: arreglo de las instalaciones afectadas. Asegurar las instalaciones con aseguradoras.</li>
+</ul>
+</li>
+<li>Desastres naturales (movimientos sísmicos...)
+
+<ul>
+<li>Descripción: daños producidos en las interfaces físicas debido a condiciones naturales extremas.</li>
+<li>Impacto de riesgo: <strong>muy alto</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>muy baja</strong>
+</li>
+<li>Plan de contingencia y prevención: arreglo de las instalaciones afectadas. Asegurar las instalaciones con aseguradoras.</li>
+</ul>
+</li>
+<li>Error en el servicio debido a operaciones de mantenimiento
+
+<ul>
+<li>Descripción: errores de consistencia e integración entre componentes del sistema introducidos por operaciones de desarrollo o mantenimiento del mismo.</li>
+<li>Impacto de riesgo: <strong>alto</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>alta</strong>
+</li>
+<li>Plan de contingencia y prevención: bloquear el uso de las aplicaciones de cliente o terminales durante las operaciones de mantenimiento. Información previa a los usuarios de cuándo se establecerán dichas operaciones.</li>
+</ul>
+</li>
+<li>Pérdida de dispositivos de identificación
+
+<ul>
+<li>Descripción: pérdida por parte del usuario de cualquier artefacto que le sirva para identificarse en el sistema (contraseña, tarjeta identificativa...).</li>
+<li>Impacto de riesgo: <strong>muy bajo</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>media</strong>
+</li>
+<li>Plan de contingencia y prevención: anulación del dispositivo o clave de identificación afectado por el ataque. Expedición de un nuevo dispositivo de identificación.</li>
+</ul>
+</li>
+</ol>
+
+<h3>
+<a id="user-content-matriz-p-i-1" class="anchor" href="#matriz-p-i-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Matriz P-I</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Impacto \ Probabilidad</th>
+<th align="center">Muy alto</th>
+<th align="center">Alto</th>
+<th align="center">Medio</th>
+<th align="center">Bajo</th>
+<th align="center">Muy bajo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Muy Alto</td>
+<td align="center" style="background-color: #800000; color: white;">3</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #800000; color: white;">4, 5</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #800000; color: white;">7</td>
+</tr>
+<tr>
+<td align="center">Alto</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #800000; color: white;">8</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+</tr>
+<tr>
+<td align="center">Medio</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">1</td>
+</tr>
+<tr>
+<td align="center">Bajo</td>
+<td align="center" style="background-color: #800000; color: white;">6</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">2</td>
+<td align="center" style="background-color: #ff1a1a; color: white;">-</td>
+</tr>
+<tr>
+<td align="center">Muy Bajo</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">9</td>
+<td align="center" style="background-color: #ff1a1a; color: white;">-</td>
+<td align="center" style="background-color: #ff4d4d; color: white;">-</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="user-content-amenazas-a-la-integridad" class="anchor" href="#amenazas-a-la-integridad" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Amenazas a la Integridad</h2>
+
+<h3>
+<a id="user-content-diagrama-de-amenazas-2" class="anchor" href="#diagrama-de-amenazas-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Diagrama de amenazas</h3>
+
+<p><a href="https://camo.githubusercontent.com/f63b710d9800b254e8d9bb3708c0c02b8f6886fa/68747470733a2f2f692e696d6775722e636f6d2f756932717267662e706e67" target="_blank"><img src="https://camo.githubusercontent.com/f63b710d9800b254e8d9bb3708c0c02b8f6886fa/68747470733a2f2f692e696d6775722e636f6d2f756932717267662e706e67" alt="diagrama-integridad" data-canonical-src="https://i.imgur.com/ui2qrgf.png" style="max-width:100%;"></a></p>
+
+<h3>
+<a id="user-content-lista-de-amenazas-2" class="anchor" href="#lista-de-amenazas-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Lista de amenazas</h3>
+
+<ol>
+<li>Suplantación voluntaria de identidad
+
+<ul>
+<li>Descripción: el atacante consigue hacerse pasar, de forma fraudulenta, por un usuario con permisos elevados sin consentimiento ni conocimiento por parte de éste, con la finalidad de modificar el correcto funcionamiento del sistema.</li>
+<li>Impacto de riesgo: <strong>bajo</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>alta</strong>
+</li>
+<li>Plan de contingencia y prevención: anulación del dispositivo o clave de identificación afectado por el ataque. Expedición de un nuevo dispositivo de identificación.</li>
+</ul>
+</li>
+<li>Suplantación involuntaria
+
+<ul>
+<li>Descripción: la identidad de los usuarios se ve alterada por un error en el sistema, haciendo que el usuario no tenga acceso a sus datos.</li>
+<li>Impacto de riesgo: <strong>muy bajo</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>muy baja</strong>
+</li>
+<li>Plan de contingencia y prevención: anulación del dispositivo o clave de identificación afectado por el ataque. Expedición de un nuevo dispositivo de identificación. Corrección de errores.</li>
+</ul>
+</li>
+<li>Ataques virales
+
+<ul>
+<li>Descripción: inyección de código malicioso en la máquina víctima con el fin de hacerse con el control de ésta de cualquier manera (trojans, worms, keyloggers...), con la finalidad de introducir malfuncionalidades en el sistema.</li>
+<li>Impacto de riesgo: <strong>muy alto</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>muy alta</strong>
+</li>
+<li>Plan de contingencia y prevención: aislamiento inmediato de la máquina afectada y análisis y limpieza posterior. Ofrecer formación a los empleados/usuarios de las máquinas.</li>
+</ul>
+</li>
+<li>Inyección SQL
+
+<ul>
+<li>Descripción: uso de scripts específicos de SQL con el fin de engañar al procesador de dichas sentencias y conseguir ejecutar una sentencia no autorizada en el servidor de la base de datos, pudiendo así insertar, modificar o eliminar datos de ésta.</li>
+<li>Impacto de riesgo: <strong>muy alto</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>media</strong>
+</li>
+<li>Plan de contingencia y prevención: isolación de la base de datos inmediata y arreglo del sistema de parseo de sentencias SQL. Comprobación previa a ejecución de los campos introducidos por el usuario en busca de posibles intentos de explotación.</li>
+</ul>
+</li>
+<li>Fallo de persistencia
+
+<ul>
+<li>Descripción: error en las operaciones de guardado o sincronización de datos entre las aplicaciones y el servidor de base de datos.</li>
+<li>Impacto de riesgo: <strong>muy alto</strong>
+</li>
+<li>Probabilidad de riesgo: <strong>baja</strong>
+</li>
+<li>Plan de contingencia y prevención: isolación de la base de datos inmediata y arreglo de los errores. Creación periódica de backups.</li>
+</ul>
+</li>
+</ol>
+
+<h3>
+<a id="user-content-matriz-p-i-2" class="anchor" href="#matriz-p-i-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Matriz P-I</h3>
+
+<table>
+<thead>
+<tr>
+<th align="center">Impacto \ Probabilidad</th>
+<th align="center">Muy alto</th>
+<th align="center">Alto</th>
+<th align="center">Medio</th>
+<th align="center">Bajo</th>
+<th align="center">Muy bajo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Muy Alto</td>
+<td align="center" style="background-color: #800000; color: white;">3</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #800000; color: white;">4</td>
+<td align="center" style="background-color: #800000; color: white;">5</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+</tr>
+<tr>
+<td align="center">Alto</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+</tr>
+<tr>
+<td align="center">Medio</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">-</td>
+</tr>
+<tr>
+<td align="center">Bajo</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">1</td>
+<td align="center" style="background-color: #e60000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">-</td>
+<td align="center" style="background-color: #ff1a1a; color: white;">-</td>
+</tr>
+<tr>
+<td align="center">Muy Bajo</td>
+<td align="center" style="background-color: #800000; color: white;">-</td>
+<td align="center" style="background-color: #b30000; color: white;">-</td>
+<td align="center" style="background-color: #e60000; color: white;">-</td>
+<td align="center" style="background-color: #ff1a1a; color: white;">-</td>
+<td align="center" style="background-color: #ff4d4d; color: white;">2</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<p><a href="/projects/security">Volver al Inicio</a></p>
+
+<hr>
+</article></body></html>

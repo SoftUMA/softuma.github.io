@@ -5,6 +5,7 @@
 - Proyecto de CORAS:
 	- [Descargar](/projects/security/coras/gestion_de_riesgos.coras_project)
 - Documentación:
+	- [Análisis de Riesgos (!important)](/projects/security/docs/risks)
 	- [Análisis de Escenarios](/projects/security/docs/analysis)
 	- [Matriz P-I](/projects/security/docs/pi-matrix)
 	- [Descripción de Diagramas](/projects/security/docs/diagrams)
