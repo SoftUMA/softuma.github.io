@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SmartGrids</title>
+    <link rel="shortcut icon" type="image/png" href="https://softuma.github.io/favicon.png">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/blood.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Análisis de Riesgos en SmartGrids</h1>
+            </section>
+            <section>
+                <h2>Dos escenarios</h2>
+                <ul>
+                    <li>Puntos de carga configurados en el exterior</li>
+                    <li>Puntos de carga configurados en zonas cerradas</li>
+                </ul>
+            </section>
+            <section>
+                <section>
+                    <h1>Puntos de carga en el exterior</h1>
+                </section>
+                <section>
+                    <h3>Área física</h3>
+                    <ul>
+                        <li>Aislamiento</li>
+                        <li>Facilidad de acceso al área</li>
+                        <li>Entorno</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Comunicación cliente-P.C.</h3>
+                    <ul>
+                        <li>RFID/NFC</li>
+                        <li>OTP</li>
+                        <li>Usuario / Contraseña</li>
+                        <li>Código QR</li>
+                        <li>Huella dactilar</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Comunicación actores-control</h3>
+                    <p>Comunicación cableada VS comunicación inalámbrica</p>
+                </section>
+                <section>
+                    <h3>Actores</h3>
+                    <ul>
+                        <li>Personal de mantenimiento</li>
+                        <li>Clientes</li>
+                        <li>Puntos de carga</li>
+                        <li>Proveedores de energía</li>
+                        <li>Servidores</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Puntos de carga en zonas cerradas</h1>
+                </section>
+                <section>
+                    <h3>Área física</h3>
+                    <ul>
+                        <li>Aislamiento y control</li>
+                        <li>Facilidad de acceso al área</li>
+                        <li>Entorno</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Comunicación cliente-P.C.</h3>
+                    <p>Diferencias en la comunicación entre el cliente y el punto de carga con respecto a los puntos de carga configurados en el exterior</p>
+                </section>
+                <section>
+                    <h3>Comunicación actores-control</h3>
+                    <p>Diferencias en el tipo de comunicación entre los distintos actores y el sistema de control</p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Assets</h2>
+                    <ul>
+                        <li>Físicos</li>
+                        <li>Digitales</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Assets físicos</h3>
+                    <ul>
+                        <li>Cableado de comunicaciones</li>
+                        <li>Suministro eléctrico</li>
+                        <li>Terminal</li>
+                        <li>Cluster de servidores</li>
+                        <li>Vehículo del cliente</li>
+                        <li>Sistemas de comunicación con el usuario</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Assets digitales</h3>
+                    <ul>
+                        <li>Datos del cliente</li>
+                        <li>Datos del sistema</li>
+                        <li>Servidor web</li>
+                        <li>Aplicación móvil</li>
+                        <li>Base de datos</li>
+                        <li>Aplicación web</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Relaciones entre assets</h3>
+                    <img src="img/0.png">
+                    <p>Cuello de botella en los sistemas de comunicación</p>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h1>Amenazas</h1>
+                </section>
+                <section>
+                    <h3>Directas</h3>
+                    <ul>
+                        <li>Corte de suministro eléctrico</li>
+                        <li>Keyloggers</li>
+                        <li>Session hijacking</li>
+                        <li>Ataques DDoS</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Indirectas</h3>
+                    <ul>
+                        <li>Suplantación de identidad involuntaria</li>
+                        <li>Inclemencias meteorológicas</li>
+                        <li>Fallos en el mantenimiento</li>
+                        <li>Pérdida de dispositivos de identificación</li>
+                    </ul>
+                </section>
+            </section>
+            <section>
+                <h3>Vulnerabilidades</h3>
+                <ul>
+                    <li>Errores del diseño</li>
+                    <li>Falta de aislamiento en el hardware</li>
+                    <li>Falta de mantenimiento</li>
+                    <li>Control de acceso ineficiente</li>
+                    <li>Sistema eléctrico inseguro</li>
+                </ul>
+            </section>
+            <section>
+                <section>
+                    <h2>Amenazas a la confidencialidad</h2>
+                </section>
+                <section>
+                    <h3>Posibles ataques</h3>
+                    <ul>
+                        <li>Ataques virales</li>
+                        <li>Inyección SQL</li>
+                        <li>Keyloggers</li>
+                        <li>Suplantación voluntaria de identidad</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Matriz PI</h3>
+                    <img src="img/1.png">
+                </section>
+                <section>
+                    <h3>Diagrama</h3>
+                    <img src="img/2.png">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Amenazas a la disponibilidad</h2>
+                </section>
+                <section>
+                    <h3>Posibles ataques</h3>
+                    <ul>
+                        <li>Ataques DDoS</li>
+                        <li>Inyección SQL</li>
+                        <li>Desastres naturales</li>
+                        <li>Destrozo por terceros</li>
+                        <li>Corte del suministro eléctrico</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Matriz PI</h3>
+                    <img src="img/3.png">
+                </section>
+                <section>
+                    <h3>Diagrama</h3>
+                    <img src="img/4.png">
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Amenazas a la integridad</h2>
+                </section>
+                <section>
+                    <h3>Posibles ataques</h3>
+                    <ul>
+                        <li>Suplantación voluntaria de identidad</li>
+                        <li>Suplantación involuntaria de identidad</li>
+                        <li>Inyección SQL</li>
+                        <li>Fallos de persistencia</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Matriz PI</h3>
+                    <img src="img/5.png">
+                </section>
+                <section>
+                    <h3>Diagrama</h3>
+                    <img src="img/6.png">
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+    // Display controls in the bottom right corner
+    controls: false,
+
+    // Display a presentation progress bar
+    progress: true,
+
+    // Display the page number of the current slide
+    slideNumber: true,
+
+    // Push each slide change to the browser history
+    history: false,
+
+    // Enable keyboard shortcuts for navigation
+    keyboard: true,
+
+    // Enable the slide overview mode
+    overview: true,
+
+    // Vertical centering of slides
+    center: true,
+
+    // Enables touch navigation on devices with touch input
+    touch: true,
+
+    // Loop the presentation
+    loop: false,
+
+    // Change the presentation direction to be RTL
+    rtl: false,
+
+    // Randomizes the order of slides each time the presentation loads
+    shuffle: false,
+
+    // Turns fragments on and off globally
+    fragments: true,
+
+    // Flags if the presentation is running in an embedded mode,
+    // i.e. contained within a limited portion of the screen
+    embedded: false,
+
+    // Flags if we should show a help overlay when the questionmark
+    // key is pressed
+    help: true,
+
+    // Flags if speaker notes should be visible to all viewers
+    showNotes: false,
+
+    // Number of milliseconds between automatically proceeding to the
+    // next slide, disabled when set to 0, this value can be overwritten
+    // by using a data-autoslide attribute on your slides
+    autoSlide: 10000,
+
+    // Stop auto-sliding after user input
+    autoSlideStoppable: false,
+
+    // Use this method for navigation when auto-sliding
+    autoSlideMethod: Reveal.navigateNext,
+
+    // Enable slide navigation via mouse wheel
+    mouseWheel: false,
+
+    // Hides the address bar on mobile devices
+    hideAddressBar: true,
+
+    // Opens links in an iframe preview overlay
+    previewLinks: false,
+
+    // Transition style
+    transition: 'concave', // none/fade/slide/convex/concave/zoom
+
+    // Transition speed
+    transitionSpeed: 'slow', // default/fast/slow
+
+    // Transition style for full page slide backgrounds
+    backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+    // Number of slides away from the current that are visible
+    viewDistance: 3,
+
+    // Parallax background image
+    parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+    // Parallax background size
+    parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+    // Number of pixels to move the parallax background per slide
+    // - Calculated automatically unless specified
+    // - Set to 0 to disable movement along an axis
+    parallaxBackgroundHorizontal: null,
+    parallaxBackgroundVertical: null
+});
+</script>
+</body>
+</html>
